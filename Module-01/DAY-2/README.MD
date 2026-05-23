@@ -1,45 +1,53 @@
 # Ex.No:1(B) VARIABLES AND OPERATOR
 
 ## AIM:
-To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
+To display the number of days in a month based on its numeric input (1–12) using basic conditional statements.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Define a class named 'Demo'
-4.	Implement the main method
-5.	Create a new instance of the 'Scanner' class named 'sc' to read user input
-6.	Read an integer 'a' from the user using the 'nextInt' method of 'sc'
-7.	Read another integer 'b' from the user using the 'nextInt' method of 'sc'
-8.	Check if 'a' is less than 50 or if 'a' is less than 'b'
-a)	If the condition is true, print "true" using the 'print' method of 'System.out'
-b)	If the condition is false, print "false" using the 'print' method of 'System.out'
-9.	End
+1. Start the program and create a Scanner object to read input from the user.
 
+2. Read two integers a and b from the user.
 
+3. Check if a is less than 50.
 
+4. If a is less than 50 and also less than b, set t to true and print it.
 
-
+5. If a is not less than 50, set t to false and print it.
 ## PROGRAM:
  ```
-/*
 Program to implement a variable and operators using Java
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Vamsi Krishna G
+RegisterNumber:  212223220120
+
+import java.util.*;
+public class Demo{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a , b;
+        boolean t;
+        a = sc.nextInt();
+        b = sc.nextInt();
+        if(a<50){
+            if(a<b){
+                t = true;
+                System.out.println(t);
+            }
+        }
+        else{
+                t= false;
+                System.out.println(t);
+            }
+    }
+}
+
+
 ```
-
-## Sourcecode.java:
-
-
-
-
-
-
 
 ## OUTPUT:
 
+![Screenshot 2025-05-09 132153](https://github.com/user-attachments/assets/4a52f1e8-c401-449a-ac01-e420fdb279c2)
 
 
 ## RESULT:
-Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
+Thus, to display the number of days in a month based on its numeric input (1–12) using basic conditional statements is executed successfully.
+
