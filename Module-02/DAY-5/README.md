@@ -1,42 +1,61 @@
-# Ex.No:2(E)  SMALLEST ELEMENT IN AN ARRAY
+# Ex.No:2(E) Array Input
 
 ## AIM:
-To write a Java program that reads an array size and elements from the user and then finds and prints the smallest element in the array.
+To read and display elements of four integer arrays using user input in Java.
 ## ALGORITHM :
-1.	Start the program.
-2.	Read the size of the array from the user.
-3.	Declare an array of the given size.
-4.	Read the array elements from the user.
-5.	Initialize a variable min with the first element of the array.
-6.	Traverse the array using a loop.
-7.	Compare each element with min. If an element is smaller, update min.
-8.	After the loop ends, print the smallest number.
-9.	End the program.
-	
+1. Initialize Scanner and declare four integer arrays of size 2.
+2. Prompt the user to input 2 elements for the first array and print each element with its index.
+3. Repeat the input and print process for the second array.
+4. Repeat the input and print process for the third array.
+5. Repeat the input and print process for the fourth array.
 
 ## PROGRAM:
  ```
-/*
 Program to implement a Smallest Element in an Array
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Vamsi Krishna G
+RegisterNumber:  212223220120
+
+import java.util.*;
+public class Demo{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int[] arr1 = new int[2];
+        int[] arr2 = new int[2];
+        int[] arr3 = new int[2];
+        int[] arr4 = new int[2];
+        
+        
+        System.out.println("Elements of array 1:");
+        for(int i=0;i<2;i++){
+            arr1[i] = sc.nextInt();
+            System.out.println("Index: "+ i +", Value: "+arr1[i]);
+        }
+        System.out.println("Elements of array 2:");
+        for(int i=0;i<2;i++){
+            arr2[i] = sc.nextInt();
+            System.out.println("Index: "+ i +", Value: "+arr2[i]);
+        }
+        System.out.println("Elements of array 3:");
+        for(int i=0;i<2;i++){
+            arr3[i] = sc.nextInt();
+            System.out.println("Index: "+ i +", Value: "+arr3[i]);
+        }
+        System.out.println("Elements of array 4:");
+        for(int i=0;i<2;i++){
+            arr4[i] = sc.nextInt();
+            System.out.println("Index: "+ i +", Value: "+arr4[i]);
+        }
+    }
+}
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
+![Screenshot 2025-05-09 134440](https://github.com/user-attachments/assets/91d1a696-81f6-4b70-aab7-4ffd827dea40)
 
 
 
 ## RESULT:
-Thus the java program successfully reads the array size and elements from the user and correctly finds and prints the smallest number in the array.
+Thus the java program to read and display elements of four integer arrays using user input in Java.
 
 
 
