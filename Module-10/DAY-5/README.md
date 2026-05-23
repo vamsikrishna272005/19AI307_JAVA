@@ -1,37 +1,46 @@
 # Ex.No:10(E)  JAVA LINKEDHASH SET
 
 ## AIM:
-To write a Java program using LinkedHashSet to store unique elements in insertion order, display all elements, and show the total size of the set.
+To read n strings into an ArrayList and print a sublist from index 1 to 2 using subList().
 ## ALGORITHM :
-a.	Import java.util.LinkedHashSet.
-b.	Create a LinkedHashSet of type String.
-c.	Add some elements using .add() method.
-d.	Print all the elements in the set using a loop.
-e.	Use .size() method to get and print the number of elements in the set.
 
 
+1. **Take input `n`** – the number of strings to read from the user.
+2. **Create an `ArrayList<String>`** and populate it with user-entered strings.
+3. **Print the original list** to confirm all input values.
+4. **Use `.subList(1, 3)`** to extract a portion of the list (from index 1 to 2).
+5. **Print the sublist** showing elements at index 1 and 2 of the original list.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a LINKEDHASH SET
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+import java.util.*;
+public class Demo{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        ArrayList<String> al = new ArrayList<String>();
+        for(int i =0;i<n;i++){
+            al.add(sc.next());
+        }
+        System.out.println("Original list: "+al);
+        List<String> newal = al.subList(1,3);
+        System.out.println("Index of 1 to 3 elements print: "+newal);
+        
+    }
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-23 143524](https://github.com/user-attachments/assets/3f7bf245-b813-463b-8521-5f2e903e10dc)
 
 
 ## RESULT:
 
-Thus the java program was successfully uses LinkedHashSet to store and display elements while maintaining insertion order and ensuring uniqueness. It also shows the correct count of unique elements. 
+Thus the java program To read n strings into an ArrayList and print a sublist from index 1 to 2 using subList() executed successfully.
