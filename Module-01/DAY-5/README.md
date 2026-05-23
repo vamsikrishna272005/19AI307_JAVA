@@ -1,44 +1,48 @@
 # Ex.No:1(E)  STATIC VARIABLE
 
 ## AIM:
-To write a Java program to print student details (name and age), where age is the same for all students. Use a static variable to represent the age and demonstrate its use in accessing a shared value across all class objects
+Write a Java program to get the values of variables 'a' and 'b' respectively and check if atleast one of the conditions 'a < 50' or 'a < b' is true.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Create a class named Student.
-3.	Declare a static variable age in the Student class.
-4.	Declare an instance variable name.
-5.	Create a constructor to initialize the student's name.
-6.	Define a method displayDetails() to print the student's name and age.
-7.	In the main method:
-I.	Assign a value to the static variable age.
-II.	Create multiple Student objects with different names.
-III.	Call the displayDetails() method for each student.
-8.	End the program.
+1. Start the program and create a Scanner object to take user input.
 
+2. Read two integers a and b from the user.
 
+3. Check the condition: if a is less than 50 or a is less than b.
 
+4. If the condition is true, print "true", else print "false".
+
+5. End the program.
 ## PROGRAM:
  ```
-/*
 Program to implement a Static Variable using Java
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Vamsi Krishna G
+RegisterNumber:  212223220120
+
+import java.util.*;
+public class Demo{
+    public static void main(String args[]){
+        int a,b;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        b= sc.nextInt();
+        if(a<50 || a<b){
+            System.out.println("true");
+        }
+        else{
+            System.out.println("false");
+        }
+        
+    }
+}
 ```
-
-## Sourcecode.java:
-
-
-
-
-
 
 
 ## OUTPUT:
 
+![Screenshot 2025-05-09 112151](https://github.com/user-attachments/assets/634aa410-d9ac-4149-bf50-602e2f7f79eb)
 
 
 ## RESULT:
-Thus, the Java program for the concept of using a static variable for shared data was correctly implemented and verified successfully. 
+Thus, Java program to get the values of variables 'a' and 'b' respectively and check if atleast one of the conditions 'a < 50' or 'a < b' is true is executed successfully.
 
