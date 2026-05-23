@@ -1,41 +1,50 @@
 # Ex.No:10(A)         JAVA COLLECTION FRAMEWORK –ARRAY LIST
 ## AIM:
- To Create a Java Program to store n numbers (add elements of type Integer) and then display the n numbers using array List.
+To read n integers from the user, store them in an ArrayList, and print each element.
 
 ## ALGORITHM:
-1.	Start the Program
-2.	Import `java.util.*` for input handling and list functionality
-3.	Define class `Snowdrop` with the `main` method:
--	a) Create `Scanner` object `sc` for input
--	b) Read an integer `n` to specify the number of elements
--	c) Create an `ArrayList` named `num` to store integers
-4.	Use a `for` loop to:
--	a) Read `n` integers from input and add each to `num`
-5.	Use an enhanced `for` loop to:
--	a) Iterate through `num` and print each element
-6.	End
+
+
+1. **Take input `n`** – total number of integers to be entered.
+2. **Create an `ArrayList<Integer>`** to store the integers.
+3. **Use a loop** to read `n` integers from the user and add them to the list.
+4. **Use an enhanced for-loop** to traverse the `ArrayList`.
+5. **Print each integer** from the list on a new line.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a ARRAY LIST using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+
+import java.util.*;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    for(int i=0;i<n;i++)
+    {
+    myNumbers.add(sc.nextInt());
+    }
+    for(int i:myNumbers){
+        System.out.println(i);
+    }
+    
+  } 
+}
+
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
-
 
 
 ## OUTPUT:
 
 
+![Screenshot 2025-05-23 142141](https://github.com/user-attachments/assets/96fe1c9b-96c8-402c-9b1d-667deda735d2)
 
 ## RESULT:
-TThus the Java Program to store n numbers (add elements of type Integer) and then display the n numbers using array List was executed successfully.
-
+TThus the Java Program To read n integers from the user, store them in an ArrayList, and print each element executed successfully.
