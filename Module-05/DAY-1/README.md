@@ -1,47 +1,54 @@
 # Ex.No:5(A)  DATA HIDING AND ENCAPSULATION
 ## AIM:
-To Create a java program to display name and location of the employee and use the encapsulation concepts
+To perform addition of two numbers using setter methods and encapsulation in Java.
 
 ## ALGORITHM :
-1.  Start the program
-2.	Define class `Employee`:
--	a) Declare two private `String` variables: `name1` and `name2`
--	b) Define `setname(String n1)` method to set `name1` to `n1`
--	c) Define `setname2(String n2)` method to set `name2` to `n2`
--	d) Define `get1()` method to return `name1`
--	e) Define `get2()` method to return `name2`
-3.	Define `Main` class with `main` method:
--	a) Create `Scanner` object `sc` for input
--	b) Read `name1` and `name2` from user input
--	c) Create ` Employee ` object `hl`
--	d) Use `hl.setname(name1)` and `hl.setname2(name2)` to set the names
--	e) Print the values of `hl.get1()` and `hl.get2()`
-4.	End
 
-
-
+1. Define an `Addition` class with two private integer variables `num1` and `num2`.
+2. Create a `set()` method to assign values to `num1` and `num2` using the `this` keyword.
+3. Define an `add()` method that returns the sum of `num1` and `num2`.
+4. In the `main()` method, use `Scanner` to read two integers from the user.
+5. Create an `Addition` object, set the values using `set()`, call `add()`, and print the result.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Data Hiding & Encapsulation using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber:  212223220120
+
+import java.util.*;
+class Addition{
+    private int num1 , num2;
+    
+    public int add(){
+        return num1+num2;
+    }
+    public void set(int num1, int num2){
+        this.num1 = num1 ;
+        this.num2 = num2;
+    }
+}
+public class Demo{
+    public static void main(String a[]){
+        Scanner sc = new Scanner(System.in);
+        int num1, num2;
+        num1 = sc.nextInt();
+        num2 = sc.nextInt();
+        Addition obj = new Addition();
+        obj.set(num1,num2);
+        int res = obj.add();
+        System.out.println(res);
+    }
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-09 144034](https://github.com/user-attachments/assets/166a0c8c-6658-4450-80f0-4c3d0c783723)
 
 
 ## RESULT:
-Thus , the  java program to display name and location of the employee and use the encapsulation concepts executed successfully.
+Thus , the  java program to perform addition of two numbers using setter methods and encapsulation in Java.
