@@ -1,48 +1,58 @@
 # Ex.No:6(C)             HIERARCHICAL INHERITANCE 
 
 ## AIM:
-  To Develop a Java program to perform Hierarchical Inheritance for below scenario Parent have method " display" to display "This is Parent Class". Child1 have method "print" to display "This is Child1 Class" Child1 have method "print" to display "Child2 Class". In Main create object for both child1 and child2 and access its member function.
-
+  To perform addition and subtraction using inheritance with shared data members
 
 ## ALGORITHM :
-1.  Start the Program
-2.	Define class `Parent`:
--	a) Method `show()` to print "This is Parent Class"
-3.	Define class `Child1` that extends `Parent`:
--	a) Method `print()` to print "This is Child1 Class"
-4.	Define class `Child2` that extends `Parent`:
--	a) Method `display()` to print "This is Child2 Class"
-5.	In `Main` class `main` method:
--	a) Create `Child1` object `child` and call `show()` and `print()` on it
--	b) Create `Child2` object `chi` and call `show()` and `display()` on it
-6.	End
 
-
-
+1. Create a base class `Number` with two numbers and a result variable.
+2. Derive class `Addition` from `Number` and override `display` to compute and print the sum.
+3. Derive class `Subraction` from `Number` and override `display` to compute and print the difference.
+4. In the `main` method, create objects of `Addition` and `Subraction`.
+5. Call their `display` methods to show the results of both operations.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Hierarchical Inheritance using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+class Number{
+    int num1 = 10;
+    int num2 = 5;
+    int res;
+}
+class Addition extends Number{
+    void display(){
+    res = num1 + num2;
+    System.out.println("Addition of 2 values "+res);
+    }
+}
+class Subraction extends Number{
+    void display(){
+    res = num1 - num2;
+    System.out.println("Subtraction of 2 values "+res);
+    }
+}
+public class Demo{
+    public static void main(String a[]){
+        Addition obj = new Addition();
+        obj.display();
+        Subraction obj1 = new Subraction();
+        obj1.display();
+    }
+
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
-
+![Screenshot 2025-05-10 060148](https://github.com/user-attachments/assets/d4763aa6-8330-49c2-9f9d-156cb965914a)
 
 
 ## RESULT:
-Thus the java program for Hierarchical inheritance was executed successfully.
+Thus the java program To perform addition and subtraction using inheritance with shared data members executed successfully.
 
 
 
