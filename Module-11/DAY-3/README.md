@@ -1,46 +1,59 @@
 # Ex.No:11(C)             JAVA LINKED HASHMAP
  ## AIM :
 
-To Create a java program to display the contains key of 104 and to retrieve the key and value using linked hash map.
+To insert entries into a LinkedHashMap, display them, replace the value of a specific key, and display the updated map.
 
 ## ALGORITHM :
 
-1.	Start the Program
-2.	Import `java.util.*`
-3.	Define class `A` with `main` method:
--	a) Initialize `Scanner` and read integer `n`
--	b) Create a `LinkedHashMap` named `hash` to store integer keys and string values
-4.	Use a loop to:
--	a) Read an integer and string from the user
--	b) Add the integer as the key and the string as the value in `hash`
-5.	Use an enhanced `for` loop to iterate through `hash` and print each key-value pair
-6.	Check if the `hash` contains the key `104` and print the result
-7.	End
+1. **Take input `size`** – the number of key-value pairs to be inserted.
+2. **Create a `LinkedHashMap<Integer, String>`** to maintain insertion order.
+3. **Use a loop** to read keys and values and insert them into the map using `.put()`.
+4. **Display the original map** using a `for-each` loop with `Map.Entry`.
+5. **Replace the value** for key `100` using `.replace()` and print the updated map.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a JAVA LINKED HASH MAP using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+import java.util.*;  
+public class Mapp{  
+ public static void main(String args[]){ 
+     
+  LinkedHashMap<Integer,String> map=new LinkedHashMap<>(); 
+  Scanner sc=new Scanner(System.in);
+  
+  int size=sc.nextInt();
+  for(int i=0;i<size;i++)
+  {
+  Integer a=sc.nextInt();
+  String b=sc.next();
+  map.put(a,b);  
+  } 
+ for(Map.Entry m: map.entrySet()){
+     System.out.println(m.getKey()+" "+ m.getValue());
+ }
+ map.replace(100,"welcome to java");
+ System.out.println("HashMap After Replace :");
+ for(Map.Entry m: map.entrySet()){
+     System.out.println(m.getKey()+" "+m.getValue());
+ }
+ 
+ }
+}
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
-
-
 
 ## OUTPUT:
 
 
+![Screenshot 2025-05-23 144512](https://github.com/user-attachments/assets/aca788bf-830b-404b-a255-1db160d656df)
 
 ## RESULT:
-Thus the  java program to display the contains key of 104 and to retrieve the key and value using linked hash map was executed successfully.
+Thus the  java program To insert entries into a LinkedHashMap, display them, replace the value of a specific key, and display the updated map executed successfully.
 
 
 
