@@ -1,42 +1,44 @@
-# Ex.No:9(E) STRING WRITER
-
+# Ex.No:9(E) Serialize Studentinfo Object to File
 ## AIM:
-To write a Java program that reads a string from the user and prints it using the StringWriter class.
+To serialize a Studentinfo object and write it to a file using ObjectOutputStream.
 ## ALGORITHM :
 
-a.	Start the program.
-b.	Import java.io.* and java.util.Scanner.
-c.	Create a Scanner object to read input from the user.
-d.	Read a string from the user.
-e.	Create a StringWriter object.
-f.	Write the string to the StringWriter object.
-g.	Convert the StringWriter content to a string using .toString().
-h.	Print the result on the output screen.
-i.	Close the writer.
-j.	End the program.
+1. **Take user input** – Read `name` and `num` (roll number) using `Scanner`.
+2. **Create a `Studentinfo` object** using the input values.
+3. **Open a `FileOutputStream`** pointing to `"student.txt"` to store object data.
+4. **Wrap it with `ObjectOutputStream`** and write the object using `.writeObject()`.
+5. **Close the stream** and handle exceptions with try-catch.
+
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a STRING WRITER
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi krishna G
+RegisterNumber: 212223220120
+
+try{
+    Scanner sc = new Scanner(System.in);
+    String name = sc.nextLine();
+    int num = sc.nextInt();
+    Studentinfo obj = new Studentinfo(name,num);
+    FileOutputStream fos = new FileOutputStream("student.txt");
+    ObjectOutputStream obj1 = new ObjectOutputStream(fos);
+    obj1.writeObject(obj);
+    obj1.close();
+}
+catch(Exception e){
+    System.out.println(e);
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-23 141652](https://github.com/user-attachments/assets/1b9ea630-c17f-4d96-aa32-ae95fac92b11)
 
 
 ## RESULT:
-Thus, implementation of  a Java program was successfully reads a string from the user and uses StringWriter to write and print the string to the output screen.
+Thus, implementation of  a Java program To serialize a Studentinfo object and write it to a file using ObjectOutputStream executed successfully.
 
