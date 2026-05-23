@@ -1,50 +1,47 @@
-# Ex.No:4(E)  PARAMETERIZED CONSTRUCTOR
+# Ex.No:4(E)  Character Input Using do-while
 ## AIM:
-To write a parameterized constructor in the Employee class that initializes name and designation, and then call getter methods in the main() method of another class (Sample) to display the values.
-
+To read and display multiple lines of character input using a do-while loop in Java.
 ## ALGORITHM :
 
-	1.	Start the program.
-2.	Define a class Employee:
-    a.	  Declare two private string variables: name and designation.
-3.	Create a parameterized constructor in Employee:
-4.	Accept two parameters: name and designation.
-5.	Assign the parameters to the class fields.
-6.	Define two getter methods in the Employee class:
-     a.	getName() – returns the value of name.
-     b.	getDesg() – returns the value of designation.
-7.	Create another class Sample with the main method.
-8.	Inside the main method:
-     a.	Create an object of Employee using the constructor and pass "John" and "Asst.Manager" as arguments.
-     b.	Call getName() and store the result in a variable empName.
-     c.	Call getDesg() and store the result in a variable empDesg.
-9.	Print the values of empName and empDesg.
-10.	End the program
-
+1. Initialize `Scanner` and prompt the user to enter the number of characters (lines) to input.
+2. Declare a `String` array of size `a + 1` to store the input lines.
+3. Use a `do-while` loop to read lines from the user using `nextLine()` and store them in the array.
+4. Print each input line immediately after reading it.
+5. Continue the loop until `i <= a` to collect all the required inputs including handling the initial newline after `nextInt()`.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Parameterized Constructor Using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+import java.util.*;
+public class Demo{
+    public static void main(String ar[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Entered characters are:");
+        int a = sc.nextInt();
+        String[] arr = new String[a+1];
+        int i =0;
+        do{
+            arr[i] = sc.nextLine();
+            System.out.println(arr[i]);
+            i++;
+        }while(i<=a);
+      
+    }
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-09 143820](https://github.com/user-attachments/assets/3d42992b-116c-41c3-902f-36c49ee6b28b)
 
 
 ## RESULT:
-Thus, the  java program was successfully demonstrates the use of a parameterized constructor to initialize class fields.
+Thus, the  java program To read and display multiple lines of character input using a do-while loop in Java executed successfully.
 
  
 
