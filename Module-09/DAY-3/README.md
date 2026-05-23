@@ -1,40 +1,60 @@
 # Ex.No:9(C)             STRING READER
 ## AIM:
- To Create a Java Program to display and skip the specified number of characters using the predefined Method Skip in StringReader
+To write input string data to a StringWriter and display it.
 
 
 ## ALGORITHM :
-1.  The user enters a string (data) and an integer (skipnumber) indicating the number of characters to skip.
-2.	The original string is displayed for reference.
-3.	A StringReader object, input, is created to read from data.
-4.	The program skips the specified number of characters (skipnumber) in the string.
-5.	It reads and displays the remaining characters one by one until the end of the string.
-6.	Any exceptions are caught, and stack trace information is generated if an error occurs.
+1. **Take input** string from the user using `Scanner`.
+2. **Create `StringWriter`** with default buffer.
+3. **Write the input** string to the `StringWriter` using `.write()`.
+4. **Print the content** stored in the `StringWriter`.
+5. **Handle exceptions** and close the `StringWriter`.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a String Reader using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+import java.io.StringWriter;
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+
+   Scanner sc = new Scanner(System.in);
+    String data = sc.nextLine();
+
+    try {
+      // Create a StringWriter with default string buffer capacity
+      System.out.print("Data in the StringWriter: ");
+      StringWriter output = new StringWriter();
+      output.write(data);
+      System.out.println(output);
+      output.close();
+      
+      
+      
+    }
+
+    catch(Exception e) {
+      e.getStackTrace();
+    }
+  }
+}
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
 
 
 
 ## OUTPUT:
 
 
+![Screenshot 2025-05-23 141050](https://github.com/user-attachments/assets/73a66dc4-3e6c-48ba-afd0-f64f7721d9f1)
 
 ## RESULT:
-Thus the Java Program to display and skip the specified number of characters using the predefined Method Skip in StringReader was executed and verified successfully.
+Thus the Java Program To write input string data to a StringWriter and display it executed successfully.
 
 
 
