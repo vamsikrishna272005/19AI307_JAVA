@@ -1,37 +1,38 @@
 # Ex.No:6(D) PACKAGES
 ## AIM:
-  To create a Java Program for accessing package from another package using packagename.
+ To demonstrate how to define and use a class inside a Java package.
  
 ## ALGORITHM :
-1.	Start the Program
-2.	Create a directory named pack and save A.java inside it.
-2.	Compile A.java from the parent directory using javac pack/A.java.
-3.	Create another directory named mypack and save B.java inside it.
-4.	Compile B.java from the parent directory using javac mypack/B.java.
-5.	Run B from the parent directory with java mypack.B
 
+1. Declare the package name using `package JavaProgramming.arrays;` at the top of the file.
+2. Define the `TwoPointers` class as `public` so it can be accessed outside the package.
+3. Inside `main`, print a simple message to verify successful compilation and execution.
+4. Save the file as `TwoPointers.java` inside the correct folder structure: `JavaProgramming/arrays/`.
+5. Compile using `javac JavaProgramming/arrays/TwoPointers.java` and run using `java JavaProgramming.arrays.TwoPointers`.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Packages using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+package JavaProgramming.arrays;
+
+public class TwoPointers {
+
+    public static void main(String[] args) {
+        System.out.println("Inside the package");
+    }
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-10 060505](https://github.com/user-attachments/assets/fe54032b-0a13-452a-99b1-c61158e36091)
 
 
 ## RESULT:
-Thus, the program has accessed the package from another package has been done successfully.
+Thus, To demonstrate how to define and use a class inside a Java package executed successfully.
 
