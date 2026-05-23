@@ -1,46 +1,49 @@
-# Ex.No:6(E)  MULTIPLE INHERITANCE
+# Ex.No:6(E) Arrays and Looping
 
 ## AIM:
-To write a Java program using multiple inheritance through interfaces to read student details and marks, calculate the average, and display the mark sheet.
+To find and display the smallest number in a user-defined array.
 
 ## ALGORITHM :
 
-1.	Start the program.
-2.	Create interface Student:
-a.	Declare methods to read name and rollno.
-3.	Create interface Studentdet:
-a.	Declare a method to read marks of 6 subjects and calculate the average.
-b.	Create a class Studentdetails that implements both interfaces:
-c.	Define variables for name, roll number, marks array, and average.
-4.	Implement all methods from the interfaces.
-a.	Create a display() method to show student details and average.
-5.	In main() method:
-a.	Create an object of Studentdetails.
-b.	Call the methods to get input and display results.
-6.	End the program.
-
+1. Read the size of the array from the user.
+2. Create an integer array of the specified size.
+3. Read elements into the array using a loop.
+4. Initialize a variable with the first element and compare it with the rest to find the smallest.
+5. Print the smallest number after the loop ends.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Multiple Inheritance
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+import java.util.*;
+public class Demo{
+    public static void main(String ar[]){
+        int a;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        int[] arr = new int[a];
+        for(int i =0;i<a;i++){
+            arr[i] = sc.nextInt();
+        }
+        int lar = arr[0];
+        for(int i =0;i<a;i++){
+            if(lar> arr[i]){
+                lar = arr[i];
+            }
+        }
+        System.out.println("Smallest Number = "+lar);
+    }
+}
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-10 060806](https://github.com/user-attachments/assets/d67426d4-de06-467b-9d38-971dd45e6d06)
 
 
 ## RESULT:
 
-Thus, the java program demonstrates multiple inheritance using interfaces and successfully displays the mark sheet of a student by collecting personal and academic data. 
+Thus, the java program To find and display the smallest number in a user-defined array executed successfully.
