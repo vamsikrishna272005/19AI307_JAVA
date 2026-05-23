@@ -1,43 +1,61 @@
 # Ex.No:10(C)             JAVA LIST INTERFACE
  ## AIM :
+To insert and update elements in a List<String> at specific indices using add() and set() methods.
 
-To Create a List interface implemented by arraylist class , adding n elements to object of List interface and display the list is empty or not.
+
 
 
 ## ALGORITHM :
-1.	Start
-2.	Import `java.util.*`
-3.	Define class `Main` with `main` method:
--	a) Initialize `Scanner` and an empty `ArrayList` named `list`
--	b) Read integer `n`
-4.	Check if `list` is empty, print corresponding message
-5.	Use a loop to add `n` strings to `list`
-6.	Check if `list` is empty again, print corresponding message
-7.	End
+
+1. **Take input `size`** – the number of strings to be initially added to the list.
+2. **Create an `ArrayList<String>`** and populate it with user input.
+3. **Display the list** to show the original content.
+4. **Insert a new string at index 1** using `.add(1, value)`.
+5. **Update the element at index 2** using `.set(2, value)` and print the modified list.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a JAVA LIST INTERFACE using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Vamsi Krishna G
+RegisterNumber: 212223220120
+
+import java.util.*;
+
+
+public class GFG {
+
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		List<String> al = new ArrayList<>();
+        int size=sc.nextInt();
+        for(int i=0;i<size;i++)
+        {
+				al.add(sc.next());
+        }
+        System.out.println(al);
+        al.add(1,sc.next());
+		
+		System.out.println("After add element in index 1 :" + al);
+		al.set(2,sc.next());
+		System.out.println("After update:" + al);
+	}
+}
+
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
-
 
 
 ## OUTPUT:
 
+![Screenshot 2025-05-23 142927](https://github.com/user-attachments/assets/96b3cef0-7c23-479b-9b35-cf54f1f261bf)
 
 
 ## RESULT:
-Thus the java program implemented a List interface for array list was executed and verified successfully.
+Thus the java program To insert and update elements in a List<String> at specific indices using add() and set() methods executed successfully.
+
+
 
 
 
